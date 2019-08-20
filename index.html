@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- HTML for personal website at emmalangfitt.me -->
+<html>
+  <head>
+    <title>Emma Langfitt</title>
+    <link rel="stylesheet" href="main.css"/>
+    <!-- Google Fonts to include -->
+    <!-- font-family: 'Basic', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Basic&display=swap" rel="stylesheet">
+    <!-- Required Core stylesheet -->
+    <link rel="stylesheet" href="glide.core.min.css">
+    <!-- Optional Theme stylesheet -->
+    <link rel="stylesheet" href="glide.theme.min.css">
+  </head>
+
+  <body>
+    <div id="main">
+      <img id="profpic" src="src/profpic.JPG">
+
+      <div id="menu">
+        <li><a href="#des">design</a></li>
+        <li><a href="#dev">development</a></li>
+        <li><a href="#photog">photography</a></li>
+        <li><a href="">resume</a></li>
+        <li><a href="#about">about</a></li>
+      </div>
+
+    </div>
+
+    <div id="des">
+      <div class="centering">
+        <h1>design</h1>
+        <div class="glide1">
+          <div data-glide-el="controls" class="button">
+            <button data-glide-dir="<"><</button>
+          </div>
+          <div data-glide-el="track" class="glide__track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="card">
+                  <img src="src/profpic.JPG" alt="" style="width:100%">
+                  <div class="container">
+                    <h4><b>Project 1</b></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card">
+                  <img src="src/profpic.JPG" alt="" style="width:100%">
+                  <div class="container">
+                    <h4><b>Project 1</b></h4>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="card">
+                  <img src="src/profpic.JPG" alt="" style="width:100%">
+                  <div class="container">
+                    <h4><b>Project 1</b></h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div data-glide-el="controls" class="button">
+            <button data-glide-dir=">">></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="dev">
+      <h1>development</h1>
+      <div id="bullets">
+        <h3>Project One</h3>
+        <div class="underline"></div>
+        <ul>
+          <li>description descriptiondescriptionde scriptiondescript iondescriptionde scription description
+          descriptio nde scriptio ndescription descriptiond escription descriptiond escription
+        descriptiondesc riptiondesc riptiondescription descriptiondescrip ion descriptiondescri ptiondescription</li>
+          <li>description</li>
+        </ul>
+
+        <h3>Project Two</h3>
+        <div class="underline"></div>
+        <ul>
+          <li>description descriptiondescriptiondescriptiondescript iondescriptiondescription description
+          descriptionde scriptiondescription descriptiondescription descriptiondescription
+        descriptiondescriptiondesc riptiondescription descriptiondescription descriptiondescri ptiondescription</li>
+          <li>description</li>
+        </ul>
+
+        <h3>Project Three</h3>
+        <div class="underline"></div>
+        <ul>
+          <li>description descriptiondescriptiondescriptiondescript iondescriptiondescription description
+          descriptionde scriptiondescription descriptiondescription descriptiondescription
+        descriptiondescriptiondesc riptiondescription descriptiondescription descriptiondescri ptiondescription</li>
+          <li>description</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="photog">
+      <h1>photography</h1>
+      <div class="glide2">
+        <div data-glide-el="controls" class="button">
+          <button data-glide-dir="<"><</button>
+        </div>
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="card">
+                <img src="src/profpic.JPG" alt="" style="width:100%">
+                <div class="container">
+                  <h4><b>Project 1</b></h4>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card">
+                <img src="src/profpic.JPG" alt="" style="width:100%">
+                <div class="container">
+                  <h4><b>Project 1</b></h4>
+                </div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="card">
+                <img src="src/profpic.JPG" alt="" style="width:100%">
+                <div class="container">
+                  <h4><b>Project 1</b></h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div data-glide-el="controls" class="button">
+          <button data-glide-dir=">">></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div id="bio">
+        <h1>about me</h1>
+        <p>bio text here</p>
+      </div>
+    </div>
+
+  </body>
+
+  <footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    new Glide('.glide1', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3
+    }).mount();
+    new Glide('.glide2', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3
+    }).mount();
+  </script>
+
+</html>
