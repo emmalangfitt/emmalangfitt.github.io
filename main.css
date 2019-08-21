@@ -15,6 +15,10 @@ h3 {
   margin-bottom: .5vh;
 }
 
+h4 {
+  font-size: 1.1vw;
+}
+
 .underline {
   height: 4px;
   background-color:  #E5F1F4;
@@ -71,9 +75,12 @@ h3 {
 
 #about {
   background-color: #E5F1F4;
-  width: 97vw;
-  height: 57vh;
-  padding: 1.5vw
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #bullets {
@@ -88,30 +95,45 @@ h3 {
   color: #737373;
 }
 
+#biopic {
+  height: 50vh;
+  box-shadow: 0px 15px 0px #FFFFFF, 15px 0px 0px #FFFFFF, 15px 15px 0px #FFFFFF;
+  margin-bottom: 15px;
+}
+
+#bio {
+  margin-left: 35px;
+  width: 30vw;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 1vw .6vw;
+  margin: 1.1vw .6vw;
+  transition: .2s ease;
 }
 
 .container {
-  padding: 1vh 2vw;
+  padding-left: 1vw;
+  display: flex;
+  align-content: center;
 }
 
-footer {
-  width: 100vw;
-  height: 7vh;
+.card:hover {
+  transform: scale(1.02);
 }
 
 .glide1, .glide2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: default !important;
 }
 
 button {
   margin: .5vw;
   border: none;
   background-color: transparent;
+  color: #404040;
   font-size: 3vw;
   font-weight: bold;
   font-family: 'Basic', sans-serif;
@@ -127,4 +149,29 @@ button:focus {
 
 #bio h1 {
   margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 7vh;
+}
+
+footer i {
+  margin-right: 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+a:hover {
+  color: #9C9C9C;
+}
+
+#dev a {
+  color: #737373;
 }
