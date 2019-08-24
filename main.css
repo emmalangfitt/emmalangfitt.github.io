@@ -23,7 +23,7 @@ h4 {
   height: 4px;
   background-color:  #E5F1F4;
   margin-bottom: 1.5vh;
-  width: 25vw;
+  width: 35vw;
 }
 
 #main {
@@ -174,4 +174,28 @@ a:hover {
 
 #dev a {
   color: #737373;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible {
+  width: 35vw;
+}
+
+.collapsible:hover {
+  cursor: pointer;
+}
+
+i.fas.fa-chevron-down {
+  display: inline;
+  float: right;
+}
+
+i.fas.fa-chevron-up {
+  display: none;
+  float: right;
 }

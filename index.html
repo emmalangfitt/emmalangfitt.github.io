@@ -87,30 +87,48 @@
     <div id="dev">
       <h1>development</h1>
       <div id="bullets">
-        <h3>Vibes Mobile App</h3>
+        <h3 class="collapsible">
+          Vibes Mobile App
+          <i class="fas fa-chevron-up"></i>
+          <i class="fas fa-chevron-down"></i>
+        </h3>
         <div class="underline"></div>
-        <ul>
-          <li>I worked in a group of five to develop a mobile app for creating location-based collaborative playlists, built with React Native using Spotify's Web API</li>
-          <li>The app allows you to be authenticated with Spotify and play music through Spotify's player</li>
-          <li>Users can create a playlist and select a starting genre/vibe, which will populate the initial playlist. This playlist will be location-based, in that users in the vicinity of a playlist will automatically be able to add to it, and once they leave, they no longer have access.</li>
-        </ul>
+        <div class="content">
+          <ul>
+            <li>I worked in a group of five to develop a mobile app for creating location-based collaborative playlists, built with React Native using Spotify's Web API</li>
+            <li>The app allows you to be authenticated with Spotify and play music through Spotify's player</li>
+            <li>Users can create a playlist and select a starting genre/vibe, which will populate the initial playlist. This playlist will be location-based, in that users in the vicinity of a playlist will automatically be able to add to it, and once they leave, they no longer have access.</li>
+          </ul>
+        </div>
 
-        <h3>Nosedive Mobile Research App</h3>
+        <h3 class="collapsible">
+          Nosedive Mobile Research App
+          <i class="fas fa-chevron-up"></i>
+          <i class="fas fa-chevron-down"></i>
+        </h3>
         <div class="underline"></div>
-        <ul>
-          <li>I built a social rating app based on the <i>Black Mirror</i> episode Nosedive for use in Dartmouth's Computational Social Affective Neuroscience Laboratory's social experiments</li>
-          <li>Users can create an account, view the ratings of the other participants in their experimental group, search for participants by name or participant number, and rate other participants on a five-point scale
-          </li>
-          <li>Admin users can create experiment groups and change the experimental conditions by using a weighted vs. non-weighted rating systems and starting participants with equal or varied ratings</li>
-          <li>Built with the Ionic development framework to create a hybrid mobile app using HTML, CSS, and Javascript</li>
-        </ul>
+        <div class="content">
+          <ul>
+            <li>I built a social rating app based on the <i>Black Mirror</i> episode Nosedive for use in Dartmouth's Computational Social Affective Neuroscience Laboratory's social experiments</li>
+            <li>Users can create an account, view the ratings of the other participants in their experimental group, search for participants by name or participant number, and rate other participants on a five-point scale
+            </li>
+            <li>Admin users can create experiment groups and change the experimental conditions by using a weighted vs. non-weighted rating systems and starting participants with equal or varied ratings</li>
+            <li>Built with the Ionic development framework to create a hybrid mobile app using HTML, CSS, and Javascript</li>
+          </ul>
+        </div>
 
-        <h3>Mindful Social Media Chrome Extension</h3>
+        <h3 class="collapsible">
+          Mindful Social Media Chrome Extension
+          <i class="fas fa-chevron-up"></i>
+          <i class="fas fa-chevron-down"></i>
+        </h3>
         <div class="underline"></div>
-        <ul>
-          <li>I created a Google Chrome Extension using JavaScript and CSS to automatically turn social media sites to greyscale, encouraging mindful use of these platforms by removing color cues that create compulsive attention</li>
-          <li>This was inspired by the work of <a href="https://www.youtube.com/watch?v=gvQxtotEX-M">Tristan Harris</a>, who promotes conscious use of technology and ethical deisgn</li>
-        </ul>
+        <div class="content">
+          <ul>
+            <li>I created a Google Chrome Extension using JavaScript and CSS to automatically turn social media sites to greyscale, encouraging mindful use of these platforms by removing color cues that create compulsive attention</li>
+            <li>This was inspired by the work of <a href="https://www.youtube.com/watch?v=gvQxtotEX-M">Tristan Harris</a>, who promotes conscious use of technology and ethical deisgn</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -233,6 +251,26 @@
       perView: 4,
       dragThreshold: false
     }).mount();
+  </script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+          this.children[1].style.display = "inline";
+          this.children[0].style.display = "none";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.children[1].style.display = "none";
+          this.children[0].style.display = "inline";
+        }
+      });
+    }
   </script>
 
 </html>
