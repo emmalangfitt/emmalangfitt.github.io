@@ -128,14 +128,47 @@ a:hover {
   height: 5vh;
 }
 
-@media screen and (max-width: 700px) {
+-ms-@viewport {
+    width: device-width;
+    initial-scale: 1;
+    zoom: 1;
+    min-zoom: 1;
+    max-zoom: 1;
+    user-zoom: fixed;
+}
+
+@viewport {
+    width: device-width;
+    initial-scale: 1;
+    zoom: 1;
+    min-zoom: 1;
+    max-zoom: 1;
+    user-zoom: fixed;
+}
+
+@media only screen and (max-width: 800px) {
   .column {
     flex: 90%;
     max-width: 90%;
+    margin: 0;
   }
 
   .columnmobile {
     flex: 50%;
     max-width: 50%;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+  
+  footer i {
+    margin-right: 2vw;
+  }
+
+  .endimage {
+    width: 90vw;
+    margin-bottom: 5vh;
+    margin-top: 3vh;
   }
 }

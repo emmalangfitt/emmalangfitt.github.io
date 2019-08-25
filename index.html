@@ -4,6 +4,7 @@
 <html>
   <head>
     <title>Emma Langfitt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="main.css"/>
     <!-- font-family: 'Basic', sans-serif; -->
     <link href="https://fonts.googleapis.com/css?family=Basic&display=swap" rel="stylesheet">
@@ -239,18 +240,35 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script>
-    new Glide('.glide1', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 4,
-      dragThreshold: false
-    }).mount();
-    new Glide('.glide2', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 4,
-      dragThreshold: false
-    }).mount();
+    var mq = window.matchMedia( "(min-width: 800px)" );
+    console.log(mq.matches);
+    if(mq.matches){
+      new Glide('.glide1', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 4,
+        dragThreshold: false
+      }).mount();
+      new Glide('.glide2', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 4,
+        dragThreshold: false
+      }).mount();
+    } else {
+      new Glide('.glide1', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 2,
+        dragThreshold: false
+      }).mount();
+      new Glide('.glide2', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 2,
+        dragThreshold: false
+      }).mount();
+    }
   </script>
   <script>
     var coll = document.getElementsByClassName("collapsible");
