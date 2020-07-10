@@ -6,289 +6,68 @@
     <title>Emma Langfitt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="main.css"/>
-    <!-- font-family: 'Basic', sans-serif; -->
-    <link href="https://fonts.googleapis.com/css?family=Basic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="glide.core.min.css">
-    <link rel="stylesheet" href="glide.theme.min.css">
+    <!-- serif font-family 'Libre Baskerville' -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/49ebfa80bb.js"></script>
   </head>
 
   <body>
-    <div id="main">
-      <img id="profpic" src="src/home/profpic.jpg">
-
-      <div id="menu">
-        <li><a href="#des">design</a></li>
-        <li><a href="#dev">development</a></li>
-        <li><a href="#photog">photography</a></li>
-        <li><a href="src/home/EmmaLangfittResume.pdf">resume</a></li>
-        <li><a href="#about">about</a></li>
-      </div>
-
+    <div id="nav">
+      <p>Emma Langfitt</p>
+      <p>/</p>
+      <a id="active">Portfolio</a>
+      <p>/</p>
+      <a href="/pages/about.html">About</a>
+      <p>/</p>
+      <a href="/pages/resume.html">Resume</a>
     </div>
 
-    <div id="des">
-      <div class="centering">
-        <h1>design</h1>
-        <div class="glide1">
-          <div data-glide-el="controls" class="button">
-            <button data-glide-dir="<"><</button>
-          </div>
-          <div data-glide-el="track" class="glide__track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <a href="pages/doc.html">
-                  <div class="card">
-                    <img src="src/home/DOC.png" alt="" style="width:100%">
-                    <div class="container">
-                      <h4><b>Dartmouth Outing Club Registration Site</b></h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="pages/vibes.html">
-                  <div class="card">
-                    <img src="src/home/Vibes.png" alt="" style="width:100%">
-                    <div class="container">
-                      <h4><b>Vibes User Interface</b></h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="pages/teachdelta.html">
-                <div class="card">
-                    <img src="src/home/TeachDelta.png" alt="" style="width:100%">
-                    <div class="container">
-                      <h4><b>Teach Delta Dashboard</b></h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="glide__slide">
-                <a href="pages/breathalyzer.html">
-                  <div class="card">
-                    <img src="src/home/Breathalyzer.png" alt="" style="width:100%">
-                    <div class="container">
-                      <h4><b>Breathalyzer Device and Mobile Interface</b></h4>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div data-glide-el="controls" class="button">
-            <button data-glide-dir=">">></button>
-          </div>
-        </div>
+    <div id="boxes">
+      <div class="box" style="background-color:#B5C2B8;">
+        <p>UX/UI Design: Granite State</p>
+        <div class="overlay" style="background-image: url('./images/GraniteState.png')"></div>
+      </div>
+      <div class="box" style="background-color:#E9D29E;">
+        <p>Mobile Site: Duet</p>
+        <div class="overlay" style="background-image: url('./images/Duet.png')"></div>
+      </div>
+      <div class="box" style="background-color:#EFC6B3;">
+        <p>Photography</p>
+        <div class="overlay" style="background-image: url('./images/PhotoPortfolio.png')"></div>
+      </div>
+      <div class="box" style="background-color:#D8B8AD;">
+        <p>Mobile App: Vibes</p>
+        <div class="overlay" style="background-image: url('./images/Vibes.png')"></div>
+      </div>
+      <div class="box" style="background-color:#858E8B;">
+        <p>UX/UI Design: Mavis Tires</p>
+        <div class="overlay" style="background-image: url('./images/Mavis.png')"></div>
+      </div>
+      <div class="box" style="background-color:#E7EDE3;">
+        <p>Research App: Nosedive</p>
+        <div class="overlay" style="background-image: url('./images/Nosedive.png')"></div>
+      </div>
+      <div class="box" style="background-color:#B4C7CB;">
+        <p>UX/UI Deisgn: Teach Delta</p>
+        <div class="overlay" style="background-image: url('./images/TeachDelta.png')"></div>
+      </div>
+      <div class="box" style="background-color:#ECDCC5;">
+        <p>Digital Design: Barcade Concept</p>
+        <div class="overlay" style="background-image: url('./images/Barcade.jpg')"></div>
+      </div>
+      <div class="box" style="background-color:#DB9B7E;">
+        <p>UX/UI Design: Dartmouth Outing Club</p>
+        <div class="overlay" style="background-image: url('./images/DOC.png')"></div>
       </div>
     </div>
 
-    <div id="dev">
-      <h1>development</h1>
-      <div id="bullets">
-        <h3 class="collapsible">
-          Vibes Mobile App
-          <i class="fas fa-chevron-up"></i>
-          <i class="fas fa-chevron-down"></i>
-        </h3>
-        <div class="underline"></div>
-        <div class="content">
-          <ul>
-            <li>I worked in a group of five to develop a mobile app for creating location-based collaborative playlists, built with React Native using Spotify's Web API</li>
-            <li>The app allows you to be authenticated with Spotify and play music through Spotify's player</li>
-            <li>Users can create a playlist and select a starting genre/vibe, which will populate the initial playlist. This playlist will be location-based, in that users in the vicinity of a playlist will automatically be able to add to it, and once they leave, they no longer have access.</li>
-          </ul>
-        </div>
-
-        <h3 class="collapsible">
-          Nosedive Mobile Research App
-          <i class="fas fa-chevron-up"></i>
-          <i class="fas fa-chevron-down"></i>
-        </h3>
-        <div class="underline"></div>
-        <div class="content">
-          <ul>
-            <li>I built a social rating app based on the <i>Black Mirror</i> episode Nosedive for use in Dartmouth's Computational Social Affective Neuroscience Laboratory's social experiments</li>
-            <li>Users can create an account, view the ratings of the other participants in their experimental group, search for participants by name or participant number, and rate other participants on a five-point scale
-            </li>
-            <li>Admin users can create experiment groups and change the experimental conditions by using a weighted vs. non-weighted rating systems and starting participants with equal or varied ratings</li>
-            <li>Built with the Ionic development framework to create a hybrid mobile app using HTML, CSS, and Javascript</li>
-          </ul>
-        </div>
-
-        <h3 class="collapsible">
-          Mindful Social Media Chrome Extension
-          <i class="fas fa-chevron-up"></i>
-          <i class="fas fa-chevron-down"></i>
-        </h3>
-        <div class="underline"></div>
-        <div class="content">
-          <ul>
-            <li>I created a Google Chrome Extension using JavaScript and CSS to automatically turn social media sites to greyscale, encouraging mindful use of these platforms by removing color cues that create compulsive attention</li>
-            <li>This was inspired by the work of <a href="https://www.youtube.com/watch?v=gvQxtotEX-M">Tristan Harris</a>, who promotes conscious use of technology and ethical deisgn</li>
-          </ul>
-        </div>
-      </div>
+    <div id="footer">
+      <a href="https://www.linkedin.com/in/emmalangfitt/">LinkedIn</a>
+      <p>/</p>
+      <a href="https://github.com/emmalangfitt">GitHub</a>
+      <p>/</p>
+      <a href="https://medium.com/@emma.langfitt">Medium</a>
     </div>
-
-    <div id="photog">
-      <h1>photography</h1>
-      <div class="glide2">
-        <div data-glide-el="controls" class="button">
-          <button data-glide-dir="<"><</button>
-        </div>
-        <div data-glide-el="track" class="glide__track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <a href="pages/readreceipts.html">
-                <div class="card">
-                  <img src="src/home/ReadReceipts.jpg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>Read Receipts</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="glide__slide">
-              <a href="pages/sugar.html">
-                <div class="card">
-                  <img src="src/home/Sugar.jpeg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>Sugarplum Photoshoot</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="glide__slide">
-              <a href="pages/greenkey.html">
-                <div class="card">
-                  <img src="src/home/PJ.jpg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>Green Key</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="glide__slide">
-              <a href="pages/lyftedfest.html">
-                <div class="card">
-                  <img src="src/home/LyftedFest.jpg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>LyftedFest</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="glide__slide">
-              <a href="pages/etc.html">
-                <div class="card">
-                  <img src="src/home/Mud.jpg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>Etc</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="glide__slide">
-              <a href="pages/bde.html">
-                <div class="card">
-                  <img src="src/home/BDE.jpg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>BDE</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="glide__slide">
-              <a href="pages/shark.html">
-                <div class="card">
-                  <img src="src/home/Shark.jpg" alt="" style="width:100%">
-                  <div class="container">
-                    <h4><b>shArk</b></h4>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div data-glide-el="controls" class="button">
-          <button data-glide-dir=">">></button>
-        </div>
-      </div>
-    </div>
-
-    <div id="about">
-      <img id="biopic" src="src/home/bio.jpg">
-      <div id="bio">
-        <h1><b>about me</b></h1>
-        <p>My name is Emma and I am a senior at Dartmouth College majoring in Computer Science modified with Quantitative Social Science and minoring in Psychology.</p>
-        <p>I am interested in digital mindfulness and using technology for social good.
-        </p>
-        <p>I also love my dogs, rock climbing, sending mail, receiving mail, and coffee (in that order).
-        </p>
-      </div>
-    </div>
-
   </body>
-
-  <footer>
-    <a href="https://github.com/emmalangfitt"> <i class="fab fa-github-square fa-2x"></i></a>
-    <a href="https://www.linkedin.com/in/emmalangfitt/"> <i class="fab fa-linkedin fa-2x"></i></a>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script>
-    var mq = window.matchMedia( "(min-width: 800px)" );
-    console.log(mq.matches);
-    if(mq.matches){
-      new Glide('.glide1', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 4,
-        dragThreshold: false
-      }).mount();
-      new Glide('.glide2', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 4,
-        dragThreshold: false
-      }).mount();
-    } else {
-      new Glide('.glide1', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 2,
-        dragThreshold: false
-      }).mount();
-      new Glide('.glide2', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 2,
-        dragThreshold: false
-      }).mount();
-    }
-  </script>
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-          this.children[1].style.display = "inline";
-          this.children[0].style.display = "none";
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-          this.children[1].style.display = "none";
-          this.children[0].style.display = "inline";
-        }
-      });
-    }
-  </script>
 
 </html>
